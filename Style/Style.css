@@ -5,7 +5,7 @@ h1
 a.visited
 {color:white;}
 h2
-{color:white;}
+{color:red;}
 .colonne_alpha col4
 {background-image: url("images/presentation.png");}
 .métiers + h2
