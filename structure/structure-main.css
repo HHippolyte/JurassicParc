@@ -60,7 +60,8 @@
 	width: 91.55%
 }
 .col12{
-	width: 100%
+	max-width: 100%
+	height: auto
 }
 
 /*suffixes de décalage de X colonne(s) vers la droite afin 
