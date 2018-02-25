@@ -182,7 +182,9 @@ du centre de l'écran  */
 
 @media screen and (max-width: 768px) 
 {
-  
+  .logo { position : fixed;
+	  width 75%;
+	  height: auto;}
  .colonne
   {  margin: 1% 0;}
   
