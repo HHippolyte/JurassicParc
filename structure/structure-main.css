@@ -180,7 +180,7 @@ avec une marge mini lorsque le site est ouvert sur mobile
 ,met également le header sous forme de colonnes et le menu plus rapproché
 du centre de l'écran  */
 
-@media (max-width: 1100px) 
+@media (max-width: 768px) 
 {
  .colonne
   {  margin: 1% 0;}
