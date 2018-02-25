@@ -43,14 +43,11 @@ a:visited
 #parc
 {
 	background-image: url("images/parc.jpg");
-	/*background-image: url("images/pic14.jpg");*/
 	opacity: 0.6;
-	border-radius: 2px;
 }
 #métiers
 {
 	background-image: url("images/metiers.png");
-	/*background-image: url("images/pic01.jpg");*/
 	opacity: 0.7;
 }
 #animaux
