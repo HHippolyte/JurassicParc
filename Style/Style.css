@@ -1,0 +1,93 @@
+/*décoration du titre*/
+h1
+{
+	color:white;
+	font-size: 90px;
+}
+/*Gestion de la couleur de fond du site*/
+body
+{
+	/*background-color: #E2A073;*/
+	background-image: url("images/fondzoo(flouté).jpg");
+	opacity:0.9;
+}
+/*Gestion de la police du site*/
+#conteneur
+{
+	font-family: Cambria;
+}
+/*couleur blanche des liens*/
+a
+{
+	color:white;
+	text-decoration: none;
+}
+/*fond gris des liens réseaux sociaux*/
+.reseaux_sociaux
+{
+	/*background-color: #D3D3D3;*/
+}
+/*couleur des sites sélectionnés*/
+a:hover
+{
+	color : #FFE87A;
+}
+/*couleur marron des sites visités*/
+/*
+a:visited
+{
+	color: white;
+	/*color:#753D2C;*/
+}
+/*image de fond derrière les différents bloc*/
+#parc
+{
+	background-image: url("images/parc.jpg");
+	/*background-image: url("images/pic14.jpg");*/
+	opacity: 0.6;
+	border-radius: 2px;
+}
+#métiers
+{
+	background-image: url("images/metiers.png");
+	/*background-image: url("images/pic01.jpg");*/
+	opacity: 0.7;
+}
+#animaux
+{
+	background-image: url("images/animaux.jpg");
+	opacity: 0.7;
+}
+#animations
+{
+	background-image: url("images/animations.png");
+	opacity: 0.7;
+}
+#visites
+{
+	background-image: url("images/visites.png");
+	opacity: 0.7;
+}
+#actualités
+{
+	background-image: url("images/pic03.jpg");
+	opacity: 0.7;
+}
+/*bouton menu en écriture marron et fond vert*/
+.menu
+{
+	color:#753D2C;
+	background-color:#D3D38F ;
+}
+/*décoration du titre*/
+h1
+{
+	color:white;
+}
+/*décoration bas du site*/
+/*couleur beige claire pour la bande qui présente le zoo*/
+.centrer
+{
+	/*background-image: url("images/pic13.jpg");*/
+	color: #F7DBCA;
+}

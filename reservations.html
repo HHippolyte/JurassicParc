@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Réservations - ZooPedia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="conteneur">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="presentation">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="Style/images/logo.png" alt=" Notre logo" /></span>
+								</a>
+
+
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+					
+							<li><a href="presentation.html">Présentation du zoo</a></li>
+							<li><a href="infos.html">Infos pratiques</a></li>
+							<li><a href="reservations.html">Réservations</a></li>
+						</ul>
+					</nav>
+
+				<!-- Généralités et formulaires -->
+					<div id="main">
+						<div class="presentation">
+							<form method="post" action="">
+							<fieldset> 
+								<center><legend><h3>Informations personelles</h3> </legend></center>
+							<input type="text" name="nom" placeholder="nom">
+							<input type="text" name="prenom" placeholder="prenom">
+							<input type="text" name="CP" placeholder="Code Postal" maxlength="5">
+							<input type="email" name="email" placeholder="Adresse mail" maxlength="30"> <br/>
+							</fieldset>
+
+							<fieldset>
+								<center><legend><h3>Visites</h3></legend></center>
+								<br/>
+								<p> Dates souhaitées <br/>
+								<input type="date" name="datevisite"/> <br/></p>
+								<p> 
+									<label for ="bébé">Nombre de places bébés </label><br/>
+									<select name="bébé" id="bébé">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</p>
+								<p> 
+									<label for ="enfants">Nombre de places enfants </label><br/>
+									<select name="enfants" id="enfants">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</p>
+							<p> 
+									<label for ="adultes">Nombre de places adultes </label><br/>
+									<select name="adultes" id="adultes">
+										<option value="0">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="presentation">
+							<section>
+								<h2>Contactez-nous</h2>
+								<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;) -->'
+							</section>
+							<section>
+								<h2>Réseaux sociaux</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+	</body>
+</html>
