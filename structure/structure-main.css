@@ -201,3 +201,8 @@ du centre de l'écran  */
 }
 	
 }
+@media screen and (max-width: 320px)
+{
+.colonne_alpha.centrer.col12
+	{width: 100%;}
+}
