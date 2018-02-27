@@ -3,6 +3,12 @@
 {
 	font-family: Cambria;
 }
+/*image de fond du site*/
+body
+{
+	background-image: url("images/fondzoo(flouté).jpg");
+	opacity:0.9;
+}
 /*couleur des liens en noir avec liste à puce non visible*/
 a
 {
@@ -23,10 +29,4 @@ a:hover
 #menu li
 {
 	list-style-type: none;
-}
-/*image de fond du site*/
-body
-{
-	background-image: url("images/fondzoo(flouté).jpg");
-	opacity:0.9;
 }
