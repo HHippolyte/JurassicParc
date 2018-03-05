@@ -44,32 +44,32 @@ a:hover
 #parc
 {
 	background-image: url("images/parc.jpg");
-	opacity: 0.7;
+	opacity: 0.95;
 }
 #métiers
 {
 	background-image: url("images/metiers.png");
-	opacity: 0.7;
+	opacity: 0.95;
 }
 #animaux
 {
 	background-image: url("images/animaux.jpg");
-	opacity: 0.7;
+	opacity: 0.95;
 }
 #animations
 {
 	background-image: url("images/animations.png");
-	opacity: 0.7;
+	opacity: 0.95;
 }
 #visites
 {
 	background-image: url("images/visites.png");
-	opacity: 0.7;
+	opacity: 0.95;
 }
 #actualités
 {
 	background-image: url("images/pic13.jpg");
-	opacity: 0.9;
+	opacity: 0.95;
 }
 /*bouton menu en écriture marron et fond vert*/
 .menu
