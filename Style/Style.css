@@ -1,7 +1,6 @@
 /*décoration du titre*/
 h1
 {
-	font:white;
 	font-size: 90px;
 }
 /*Gestion de la couleur de fond du site*/
@@ -15,7 +14,7 @@ body
 #conteneur
 {
 	font-family: Cambria;
-	color:white;
+	
 }
 /*couleur blanche des liens*/
 a
@@ -76,10 +75,10 @@ h1
 	color:white;
 }
 /*décoration bas du site*/
-/*
+
 /*couleur beige claire pour la bande qui présente le zoo*/
 .presentation
 {
 	color: #F7DBCA;
 }
-*/
+
