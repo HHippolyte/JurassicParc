@@ -1,6 +1,6 @@
 
 
-/*police de la classe presentation*/
+/*police et décoration de la classe presentation*/
 .presentation
 {
 	font-size: large
@@ -8,13 +8,15 @@
 .presentation h1
 {
 	font-size: larger;
+	color:#FFFFFF;
 }
-/*Gestion de la couleur de fond du site*/
+/*Gestion du fond et la police du site*/
 body
 {
 	/*background-color: #E2A073;*/
 	background-image: url("images/fondzoo(flouté).jpg");
 	opacity:0.9;
+	color:#FFFFFF;
 }
 /*Gestion de la police du site*/
 #conteneur
@@ -25,7 +27,7 @@ body
 /*couleur blanche des liens*/
 a
 {
-	color:white;
+	color:#FFFFFF;
 	text-decoration: none;
 }
 /*fond gris des liens réseaux sociaux*/
@@ -76,16 +78,7 @@ a:hover
 	background-color:#D3D38F ;
 	border-radius: 10px;
 }
-/*décoration du titre*/
-h1
-{
-	color:white;
-}
-/*décoration bas du site*/
 
-/*couleur beige claire pour la bande qui présente le zoo*/
-.presentation
-{
-	color: #F7DBCA;
-}
+
+
 
