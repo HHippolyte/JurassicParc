@@ -68,6 +68,7 @@ a:hover
 {
 	color:#753D2C;
 	background-color:#D3D38F ;
+	border-radius: 10px;
 }
 /*décoration du titre*/
 h1
