@@ -1,7 +1,13 @@
-/*décoration du titre*/
-h1
+
+
+/*police de la classe presentation*/
+.presentation
 {
-	font-size: large;
+	font-size: large
+}
+.presentation h1
+{
+	font-size: larger;
 }
 /*Gestion de la couleur de fond du site*/
 body
