@@ -7,6 +7,12 @@
 	width: 95%;
 }
 
+/*Les images de la classe logo prendront 70% de la largeur de l'écran */
+.logo img
+{
+	width:70%;
+}
+
 /*  paramètres d'une colonne normale */
 .colonne
 {
@@ -177,28 +183,33 @@ footer
 
 /* requête CSS pour mettre toute les colonnes les une en dessous de l'autre 
 avec une marge mini lorsque le site est ouvert sur mobile
-,met également le header sous forme de colonnes et le menu plus rapproché
-du centre de l'écran  */
+,met également les sections sous forme de colonnes, modifie la taille prise par le logo et l'emplacement du menu */
 
 @media screen and (max-width: 768px) 
 {
- .colonne
-  {  margin: 1% 0;}
-  
- .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,.col10,.col11,.col12
- {width: 100%;}
+	 .colonne
+	  {  margin: 1% 0;}
 
- .menu
-{
-	position: fixed;
-	right: 10%;
-	top:10%;
-	padding: 0; 
-	margin: 0;
-	list-style:none;
-	text-align: center;
-	width: 25%;
-}
+	 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9,.col10,.col11,.col12
+	 {width: 100%;}
+
+	
+	 .menu
+	{
+		position: fixed;
+		right: 5%;
+		top:3%;
+		padding: 0; 
+		margin: 0;
+		list-style:none;
+		text-align: center;
+		width: 25%;
+	}
+	
+	.logo img
+	{
+		width:100%;
+	}
 	
 }
 @media screen and (max-width: 320px)
