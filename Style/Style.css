@@ -52,30 +52,35 @@ a:hover
 	background-image: url("images/metiers.png");
 	opacity: 0.95;
 	height: 150px;
+	box-shadow: 1px 1px 40px #000000;
 }
 #animaux
 {
 	background-image: url("images/animaux.jpg");
 	opacity: 0.95;
 	height: 150px;
+	box-shadow: 1px 1px 40px #000000;
 }
 #animations
 {
 	background-image: url("images/animations.png");
 	opacity: 0.95;
 	height: 150px;
+	box-shadow: 1px 1px 40px #000000;
 }
 #visites
 {
 	background-image: url("images/visites.png");
 	opacity: 0.95;
 	height: 150px;
+	box-shadow: 1px 1px 40px #000000;
 }
 #actualités
 {
 	background-image: url("images/pic13.jpg");
 	opacity: 0.95;
 	height: 150px;
+	box-shadow: 1px 1px 40px #000000;
 }
 /*bouton menu en écriture marron et fond vert*/
 .menu
