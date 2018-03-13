@@ -45,31 +45,37 @@ a:hover
 {
 	background-image: url("images/parc.jpg");
 	opacity: 0.95;
+	height: 150px;
 }
 #métiers
 {
 	background-image: url("images/metiers.png");
 	opacity: 0.95;
+	height: 150px;
 }
 #animaux
 {
 	background-image: url("images/animaux.jpg");
 	opacity: 0.95;
+	height: 150px;
 }
 #animations
 {
 	background-image: url("images/animations.png");
 	opacity: 0.95;
+	height: 150px;
 }
 #visites
 {
 	background-image: url("images/visites.png");
 	opacity: 0.95;
+	height: 150px;
 }
 #actualités
 {
 	background-image: url("images/pic13.jpg");
 	opacity: 0.95;
+	height: 150px;
 }
 /*bouton menu en écriture marron et fond vert*/
 .menu
