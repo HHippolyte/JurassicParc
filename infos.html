@@ -6,37 +6,43 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
-		<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="structure/structure-main.css"/>
 		<link rel="stylesheet" href="Style/Style.css"/>
-		
 	</head>
 	<body>
-		<!-- Wrapper -->
-			<div id="conteneur">
-
+			<div id="conteneur"> <!-- ex wrapper correspond à l'esnsemble du corps --!>
 				<!-- Header -->
-					<header id="header">
-						<div class="presentation">
-
+					<header>
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="Style/images/logo.png" alt="Notre logo" /></span>
-								</a>
-
-							<!-- Nav -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-					
-							<li><a href="presentation.html">Présentation du zoo</a></li>
-							<li><a href="infos.html">Infos pratiques</a></li>
-							<li><a href="reservations.html">Réservations</a></li>
-						</ul>
-					</nav>
+						<div>
+							<a class="colonne_alpha centrer col12 logo" href=index.html"><img src="Style/images/logo.png" alt="Logo du Zoo" /></a>
+							
+								<!--navigation:Menu déroulant placé à droite de manière permanente-->
+							
+							<ul class="menu">
+								<li> MENU
+									<ul class=sousmenu1>
+										<li>
+											<a href="presentation.html">Présentation du zoo<a/>
+										</li>
+										<li>
+											<a href="infos.html">Infos pratiques</a>
+										</li>
+										<li>
+											<a href="reservations.html">Réservations</a>
+										</li>
+										<li>
+											<a href="intranet.html">Intranet </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</header>	
 
 				<!-- Généralités -->
-					<div id="main">
-						<div class="presentation">
+					<main>
+						<div class="colonne col12 centrer presentation">
 							<h1> Infos pratiques </h1>
 							<span class=" images "><img src="Style/images/infos.png" alt=" Infos pratiques" /></span>
 							<h2>Horaires et tarifs </h2>
@@ -74,33 +80,35 @@
 		
 						
 						</div>
-					</div>
+					</main>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="presentation">
-							<section>
-								<h2>Contactez-nous</h2>
-								<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;) -->'
-							</section>
-							<section>
-								<div class="colonne centrer col12">
-									<h2>Réseaux sociaux</h2>
-								<div class="colonne_alpha col3">
-									<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
-								</div>
-								<div class="colonne col3">
-									<img src="Style/images/facebook.png" width="65" height="65" alt="Facebook">
-								</div>
-								<div class="colonne col3">
-									<img src="Style/images/instagram.png" width="70" height="70" alt="Intsagram">
-								</div>
-								<div class="colonne col3">
-									<img src="Style/images/email.png" width="70" height="70" alt="Email">
-								</div>
-								</div>
-							</section>
-						</div>
+					<footer>
+						<section>
+							<div class="colonne centrer col12">
+									<h2>Contactez-nous</h2>
+							</div>
+									<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;)-->
+								</section>
+								<section>
+							<div class="colonne centrer col12">
+								<h2>Réseaux sociaux</h2>
+							</div>
+						</section>
+						<section class="centrer">
+							<div class="colonne_alpha col3">
+								<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
+							</div>
+							<div class="colonne col3">
+								<img src="Style/images/facebook.png" width="65" height="65" alt="Facebook">
+							</div>
+							<div class="colonne col3">
+								<img src="Style/images/instagram.png" width="70" height="70" alt="Intsagram">
+							</div>
+							<div class="colonne col3">
+								<img src="Style/images/email.png" width="70" height="70" alt="Email">
+							</div>
+						</section>
 					</footer>
 
 			</div>
