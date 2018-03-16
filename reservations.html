@@ -11,30 +11,41 @@
 		
 	</head>
 	<body>
-		<!-- Wrapper -->
+
 			<div id="conteneur">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="presentation">
-
+					</head>
+	<body>
+			<div id="conteneur"> <!-- ex wrapper correspond à l'esnsemble du corps --!>
+				<!-- Header -->
+					<header>
 							<!-- Logo -->
-								<a class='colonne_alpha centrer col12 logo' href="index.html" class="logo">
-									<img src="Style/images/logo.png" alt=" Notre logo" />
-								</a>
+							
+							<a class="colonne_alpha centrer col12 logo" href=index.html"><img src="Style/images/logo.png" alt="Logo du Zoo" /></a>
+							
+								<!--navigation:Menu déroulant placé à droite de manière permanente-->
+							</div>
+							<ul class="menu">
+								<li> MENU
+									<ul class=sousmenu1>
+										<li>
+											<a href="presentation.html">Présentation du zoo<a/>
+										</li>
+										<li>
+											<a href="infos.html">Infos pratiques</a>
+										</li>
+										<li>
+											<a href="reservations.html">Réservations</a>
+										</li>
+										<li>
+											<a href="intranet.html">Intranet </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
 
-
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul class=sousmenu1>
-					
-							<li><a href="presentation.html">Présentation du zoo</a></li>
-							<li><a href="infos.html">Infos pratiques</a></li>
-							<li><a href="reservations.html">Réservations</a></li>
-						</ul>
-					</nav>
+					</header>	
 
 				<!-- Généralités et formulaires -->
 					<div id="main">
@@ -48,6 +59,58 @@
 							<input type="email" name="email" placeholder="Adresse mail" maxlength="30"> <br/>
 							<p><label for="catégorie" > Quel est votre catégorie ? </label> <br/></p>
 								<p><select name="catégorie" id="catégorie">
+										<option value="enfant">Enfant (0-18 ans) </option>
+										<option value="adulte">Adulte (18-59ans)</option>
+										<option value="senior">Senior (à partir de 60 ans)</option>
+									</select></p>
+									</label>
+							</fieldset>
+
+							<fieldset>
+								<center><legend><h3>Visites</h3></legend></center>
+								<p> Dates souhaitées <br/></p>
+								<p><input type="date" name="datevisite"/> <br/></p>
+							</fieldset>
+							<fieldset>
+								<center><input type="submit" value="Envoyer"/></center>
+							</fieldset>
+						</form>
+						</div>
+					</div>
+
+				<footer>
+						<section>
+							<div class="colonne centrer col12">
+									<h2>Contactez-nous</h2>
+							</div>
+									<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;)-->
+						</section>
+						<section>
+							<div class="colonne centrer col12">
+								<h2>Réseaux sociaux</h2>
+							</div>
+						</section>
+						<section class="centrer">
+							<div class="colonne_alpha col3">
+								<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
+							</div>
+							<div class="colonne col3">
+								<img src="Style/images/facebook.png" width="65" height="65" alt="Facebook">
+							</div>
+							<div class="colonne col3">
+								<img src="Style/images/instagram.png" width="70" height="70" alt="Intsagram">
+							</div>
+							<div class="colonne col3">
+								<img src="Style/images/email.png" width="70" height="70" alt="Email">
+							</div>
+						</section>
+					</footer>
+
+			</div>
+
+	</body>
+</html>
+
 										<option value="enfant">Enfant (0-18 ans) </option>
 										<option value="adulte">Adulte (18-59ans)</option>
 										<option value="senior">Senior (à partir de 60 ans)</option>
