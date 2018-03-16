@@ -7,7 +7,7 @@
 		<title> Présentation ZooPedia </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="structure/structure-main.css"/>
 		<link rel="stylesheet" href="Style/Style.css"/>
 	</head>
 	<body>
@@ -15,26 +15,33 @@
 			<div id="conteneur">
 
 				<!-- Header -->
-					<!-- Header -->
-					<header id="header">
-						<div class="presentation"> <!-- ex inner -->
-
+						<header>
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="Style/images/logo.png" alt="Notre logo" /></span>
-								</a>
-						</div>
-					</header>
+							
+							<a class="colonne_alpha centrer col12 logo" href=index.html"><img src="Style/images/logo.png" alt="Logo du Zoo" /></a>
+							
+								<!--navigation:Menu déroulant placé à droite de manière permanente-->
+							</div>
+							<ul class="menu">
+								<li> MENU
+									<ul class=sousmenu1>
+										<li>
+											<a href="presentation.html">Présentation du zoo<a/>
+										</li>
+										<li>
+											<a href="infos.html">Infos pratiques</a>
+										</li>
+										<li>
+											<a href="reservations.html">Réservations</a>
+										</li>
+										<li>
+											<a href="intranet.html">Intranet </a>
+										</li>
+									</ul>
+								</li>
+							</ul>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="presentation.html">Présentation du zoo</a></li>
-							<li><a href="infos.html">Infos pratiques</a></li>
-							<li><a href="reservations.html">Réservations</a></li>
-						</ul>
-					</nav>
+					</header>	
 
 				<!-- Généralités -->
 					<div id="main">
