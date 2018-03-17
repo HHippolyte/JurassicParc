@@ -10,17 +10,17 @@
 				<h2>Réseaux sociaux</h2>
 		</div>
 	</section>
-	<section class="centrer">
+	<section class="icone centrer">
 		<div class="colonne_alpha col3">
 			<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
 		</div>
-		<div class="colonne col3">
+		<div class="icone colonne col3">
 			<img src="Style/images/facebook.png" width="65" height="65" alt="Facebook">
 		</div>
-		<div class="colonne col3">
+		<div class="icone colonne col3">
 			<img src="Style/images/instagram.png" width="70" height="70" alt="Intsagram">
 		</div>
-		<div class="colonne col3">
+		<div class="icone colonne col3">
 			<img src="Style/images/email.png" width="70" height="70" alt="Email">
 		</div>
 	</section>
