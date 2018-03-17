@@ -1,7 +1,15 @@
 
+
+/* ombre du logo*/
 .logo img
 {
     box-shadow: 1px 1px 30px #000000;
+}
+
+/*ombre des icones reseaux sociaux*/
+.icone img
+{
+	box-shadow: 1px 1px 30px #000000;
 }
 
 /*police et décoration de la classe presentation*/
