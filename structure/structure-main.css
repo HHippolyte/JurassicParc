@@ -1,4 +1,5 @@
 
+
 /*Conteneur en version ordinateur (affichage sur 960 pixel)*/
 #conteneur
 {
@@ -206,6 +207,11 @@ avec une marge mini lorsque le site est ouvert sur mobile
 		width: 25%;
 	}
 	
+	.infospratiques img
+	{
+		width:100%;
+	}
+
 	.logo img
 	{
 		width:100%;
