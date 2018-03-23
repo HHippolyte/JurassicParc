@@ -30,9 +30,6 @@
 						</form>
 
 <?php
-//Renommer les données reçues du formulaire
-$codemp=$_POST['CODE_EMPLOYE'];
-$passemp=$_POST['PASS_EMPLOYE'];
 
 //Connexion au serveur MySQL et sélection de la base
 $connexion=mysqli_connect("localhost","root","","zoopedia")
@@ -41,7 +38,10 @@ or die(mysql_error());
 //Vérification que le formulaire n'est pas vide
 if(!empty($_POST))
 {
-
+		//Renommer les données reçues du formulaire
+		$codemp=$_POST['CODE_EMPLOYE'];
+		$passemp=$_POST['PASS_EMPLOYE'];	
+	
 		//Fabrication de la requête SQL
 		$requete_connexion='SELECT * FROM employe';
 
