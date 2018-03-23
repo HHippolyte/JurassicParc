@@ -4,7 +4,8 @@
 			<h2>Contactez-nous</h2>
 		</div>
 			<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;)-->
-	<div class="colonne_alpha prefix2 col4"
+
+	<div class="colonne_alpha col6"
 		<table>
 			<form action="contact.php" method="post" >
 				<tr> 
@@ -42,7 +43,7 @@
 		</table>
 	</div>
 
-		<div class="colonne prefix1 col5">
+		<div class="colonne col6">
 				<h3>Réseaux sociaux</h3>
 		
 		<div class="icone colonne col2">
@@ -57,6 +58,7 @@
 		<div class="icone colonne col2">
 			<img src="Style/images/email.png" width="70" height="70" alt="Email">
 		</div>
+
 	</section>
 
 </footer>
