@@ -1,0 +1,73 @@
+<!DOCYPE html>
+
+<html>
+	<head>
+		<title>Réservations - ZooPedia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="structure/structure-main.css"/>
+		<link rel="stylesheet" href="Style/Style.css"/>
+	</head>
+	<body>
+			<div id="conteneur"> <!-- ex wrapper correspond à l'esnsemble du corps --!>
+				<!-- Header -->
+					<header>
+							<!-- Logo -->
+						<div>
+							<a class="colonne_alpha centrer col12 logo" href=index.php"><img src="Style/images/logo.png" alt="Logo du Zoo" /></a>
+
+	
+		<form method="post">
+									<p>
+									<center><legend><h3>Informations personelles</h3> </legend></center>
+								</p>
+
+								<p>
+									<label for="CODE_EMPLOYE"> Votre numéro d'employé : </label>
+									<input type="text" name="CODE_EMPLOYE" id="CODE_EMPLOYE"/>
+									<label for="PASS_EMPLOYE" >Votre mot de passe : </label>
+									<input type="password" name="PASS_EMPLOYE" id="PASS_EMPLOYE"/>
+									<input type="submit" value='envoyer'/>
+								</p>
+		</form>
+
+<?php
+try
+{
+	
+	$bdd = new PDO('mysql:host=localhost;dbname=zoopedia;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+	
+        die('Erreur : '.$e->getMessage());
+}
+if(!empty($_POST)){
+
+	if(isset($_POST['CODE_EMPLOYE']) && isset($_POST['PASS_EMPLOYE'])){
+	$req = $bdd->prepare('SELECT CODE_EMPLOYE, PASS_EMPLOYE FROM employe WHERE CODE_EMPLOYE = :CODE_EMPLOYE');
+$req->execute(array(
+    'CODE_EMPLOYE' => $CODE_EMPLOYE));
+$resultat = $req->fetch();
+
+// Comparaison du pass envoyé via le formulaire avec la base
+$isPasswordCorrect = password_verify($_POST['PASS_EMPLOYE'], $resultat['PASS_EMPLOYE']);
+
+if (!$resultat)
+{
+    echo 'Mauvais identifiant ou mot de passe !';
+}
+else
+{
+    if ($isPasswordCorrect) {
+        session_start();
+        $_SESSION['nom'] = $resultat['NOM_EMPLOYE'];
+        $_SESSION['prenom'] = $resultat['PRENOM_EMPLOYE'];
+        $_SESSION['numemploye'] = $CODE_EMPLOYE['CODE_EMPLOYE'];
+        echo 'Vous êtes connecté !';
+        echo $_SESSION['nom'].$_SESSION['prenom'];
+    }
+}
+}
+}
+?>
