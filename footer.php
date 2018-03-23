@@ -1,15 +1,14 @@
-
 <footer>
 	<section>
 		<div class="colonne centrer col12">
 			<h2>Contactez-nous</h2>
 		</div>
 			<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;)-->
-	<div class="colonne_alpha col6"
+	<div class="colonne_alpha prefix2 col4"
 		<table>
 			<form action="contact.php" method="post" >
 				<tr> 
-					<td colspan="3"><strong>Envoyer un message</strong></td>
+					<td colspan="3"><h3>Envoyer un message</h3></td>
 				</tr>
 				<tr> 
 					<td><div align="left">Votre nom :</div></td>
@@ -43,8 +42,8 @@
 		</table>
 	</div>
 
-		<div class="colonne col6">
-				<h2>Réseaux sociaux</h2>
+		<div class="colonne prefix1 col5">
+				<h3>Réseaux sociaux</h3>
 		
 		<div class="icone colonne col2">
 			<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
