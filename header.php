@@ -18,8 +18,12 @@
 								<a href="reservations.php">Réservations</a>
 							</li>
 							<li>
-								<a href="connexion.php">Intranet </a>
+								<a href="connexion.php">Espace Abonné </a>
 							</li>
+								<li>
+								<a href="connexionveto.php">Espace Vétérinaire </a>
+							</li>
+
 						</ul>
 					</li>
 				</ul>
