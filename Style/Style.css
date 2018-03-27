@@ -31,9 +31,15 @@ body
 	color:#FFFFFF;
 }
 
-/*Gestion du fond du footer*/
-footer
+.footer
 {
+	background-color:#a6a6a6;
+	width: 100%;
+    margin:30% 0 0 0;
+    border: 1px solid #f1f1f1;
+    opacity: 0.95;
+    position: relative;
+
 
 }
 
@@ -49,11 +55,7 @@ a
 	color:#FFFFFF;
 	text-decoration: none;
 }
-/*fond gris des liens réseaux sociaux*/
-.reseaux_sociaux
-{
-	
-}
+
 /*couleur des sites sélectionnés*/
 a:hover
 {
@@ -104,10 +106,12 @@ a:hover
 /*bouton menu en écriture marron et fond vert*/
 .menu
 {
-	color:#753D2C;
-	background-color:#D3D38F ;
+	color:#D3D38F;
+	background-color:#53af57 ;
 	border-radius: 10px;
-	box-shadow: 1px 1px 30px #000000;
+	box-shadow:6px 5px 8px #000000;
+	border: 1px solid #f1f1f1;
+
 }
 /*enlever les puce dans le menu*/
 #menu li
