@@ -143,7 +143,74 @@ session_start();
 									</div>
 
 								</fieldset>
+								
+							<fieldset>
 
+									<center><legend><h3>Ateliers</h3></legend></center>
+									<p> Choix des ateliers (maximum 3) <br/></p>
+									<div style="display:none;" id="divAteliers">
+
+									<label for="atelier" > Sélectionnez les ateliers :  </label> <br/>
+
+									<?php
+
+											//Fabrication d'une requête SQL
+											$requête='SELECT * FROM atelier A, place_atelier PA, entree E where A.CODE_ATELIER=PA.CODE_ATELIER and PA.NUM_ENTREE=A.NUM_ENTREE';
+
+											//Envoi de la requête SELECT
+											$result=mysqli_query($connexion,$requête) or die(mysql_error());
+											
+											while($data=mysqli_fetch_array($result,MYSQLI_ASSOC))
+											{
+												$datetime3= new DateTime($data['DATE_VISITE']);
+
+												//Pour mieux afficher la date
+												$datetime4= $data['DATE_ATELIER'];
+												$datetime4 = explode ("-", $datetime4); 
+												// Transforme la date en array
+												$annee = $datetime4[0];
+												$mois = $datetime4[1];
+												$jour = $datetime4[2];
+
+												//Pour mieux afficher l'heure
+												$timedebutatelier= explode (":", $data['HEURE_DEBUT_ATELIER']);
+												//Transforme l'heure en array
+												$heuredebutatelier= $timedebutatelier[0];
+												$mindebutatelier= $timedebutatelier[1];
+												$secdebutatelier= $timedebutatelier[2];
+
+												$timefinspec= explode (":", $data['HEURE_FIN_ATELIER']);
+												//Transforme l'heure en array
+												$heurefinatelier= $timefinatelier[0];
+												$minfinatelier= $timefinatelier[1];
+												$secfinatelier= $timefinatelier[2];
+
+												if($datetime1=$datetime3)
+												{
+												echo "<input type='checkbox' name='article[]' value='".$data['NOM_ATELIER'].' de '.$data['HEURE_DEBUT_ATELIER'].' à '.$data['HEURE_FIN_ATELIER'].' le '.$data['DATE_ATELIER']."'>".$data['NOM_ATELIER'].' de '.$heuredebutatelier.'h'.$mindebutatelier.'  à '.$heurefinatelier.'h'.$minfinatelier.' le '.$jour.'/'.$mois;
+												echo "<br/>";
+												}
+											}
+
+										;?>
+
+
+									<script type="text/javascript">
+										function THEFUNCTION(i)
+										{
+											var divAteliers= document.getElementById('divAteliers');
+											switch(i)
+											{
+												case 0 : divAteliers.style.display ='';break;
+												default : divAteliers.style.display='none'; break;
+											}
+										}
+									</script>
+
+									</div>
+
+								</fieldset>
+							
 								<fieldset>
 									<center><input type="submit" value="Envoyer"/></center>
 								</fieldset>
