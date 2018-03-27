@@ -1,6 +1,6 @@
 	<header>
 		<!-- Logo -->
-		<div>
+
 			<a class="colonne_alpha centrer col12 logo" href="index.php"><img src="Style/images/logo.png" alt="Logo du Zoo" /></a>
 							
 				<!--navigation:Menu déroulant placé à droite de manière permanente-->
@@ -18,7 +18,7 @@
 								<a href="reservations.php">Réservations</a>
 							</li>
 							<li>
-								<a href="connexion.php">Espace Abonné </a>
+								<a href="connexion.php">Espace Employé </a>
 							</li>
 								<li>
 								<a href="connexionveto.php">Espace Vétérinaire </a>
@@ -27,5 +27,5 @@
 						</ul>
 					</li>
 				</ul>
-		</div>
+
 	</header>	
