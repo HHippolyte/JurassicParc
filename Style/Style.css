@@ -30,7 +30,7 @@ body
 	opacity:0.9;
 	color:#FFFFFF;
 }
-
+/*Style du cadre du footer*/
 .footer
 {
 	background-color:#a6a6a6;
@@ -103,21 +103,73 @@ a:hover
 	height: 150px;
 	box-shadow: 1px 1px 40px #000000;
 }
+
+/*gestion des blocs Espace Employé */
+
+#distribution
+{
+	background-image: url("images/distribution.jpg");
+	opacity: 0.95;
+	height: 200px;
+	box-shadow: 1px 1px 40px #000000;
+}
+#animaux
+{
+	background-image: url("images/animaux.jpg");
+	opacity: 0.95;
+	height: 200px;
+	box-shadow: 1px 1px 40px #000000;
+}
+
+#ajout
+{
+	background-image: url("images/animations.png");
+	opacity: 0.95;
+	height: 200px;
+	box-shadow: 1px 1px 40px #000000;
+}
+
+
+/*Police des contenus */
+
+.contenu
+{
+	font-size:larger;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*Police du texte de présentation */
+.presentation
+{
+	font-size: larger;
+}
 /*bouton menu en écriture marron et fond vert*/
 .menu
 {
-	color:#D3D38F;
+	
 	background-color:#53af57 ;
 	border-radius: 10px;
 	box-shadow:6px 5px 8px #000000;
 	border: 1px solid #f1f1f1;
+	font-variant:small-caps;
+	font-size: x-large;
 
 }
+
+
 /*enlever les puce dans le menu*/
 #menu li
 {
 	list-style-type: none;
 	
+}
+
+/*Style de la liste déroulante*/
+.menu ul
+{
+	font-size: large;
 }
 
 
@@ -175,6 +227,9 @@ input[type=submit]
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: large;
+    font-variant: small-caps;
+    font-weight: bold;
 }
 
 input[type=reset] 
