@@ -25,7 +25,7 @@
 						</p>
 					</form>
 				</div>
-
+				<div class="contenu centrer">
 					<?php
 
 					//Connexion au serveur MySQL et sélection de la base
@@ -62,6 +62,7 @@
 							    }
 					}
 					?>
+				</div>
 		</div>
 
 		<!-- Footer-->
