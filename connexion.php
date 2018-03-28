@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="Style/Style.css"/>
 	</head>
 	<body>
-			<div id="conteneur"> 
+		<div id="conteneur"> 
 				<!-- Header -->
 					<?php include("header.php"); ?> 
 							<!-- Logo -->
@@ -65,8 +65,10 @@
 
 						?>		
 					</div>
-			</div>
-			<!-- Footer-->
-			<?php include("footer.php");?>
-	</body>
+		</div>
+	</body>	
+		<!-- Footer-->
+		<?php include("footer.php");?>
+
+	
 </html>
