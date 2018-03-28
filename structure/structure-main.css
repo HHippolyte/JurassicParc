@@ -192,9 +192,16 @@ footer
 	position:relative;
 	bottom:0;
 	left:0;
-	margin: 0% 0% 0% 8%;
+	margin: 0% 0% 0% 9%;
 	width: 83%;
 }
+
+footer table
+{
+	width: 60%;
+}
+
+
 
 /* requête CSS pour mettre toute les colonnes les une en dessous de l'autre 
 avec une marge mini lorsque le site est ouvert sur mobile
@@ -244,6 +251,10 @@ avec une marge mini lorsque le site est ouvert sur mobile
 	height: 35px;
 	}
 }
+
+
+	
+
 
 
 	
