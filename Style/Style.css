@@ -261,7 +261,7 @@ input[type=submit]
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 85%;
     font-size: large;
     font-variant: small-caps;
     font-weight: bold;
@@ -281,15 +281,5 @@ input[type=reset]
     font-weight: bold;
 }
 
-/*style de passage sur les boutons */;
-input[type=submit]:hover {
-    background-color: white;
-    color: #53af57;
-    border: 1px solid #53af57;
-}
 
-input[type=reset]:hover {
-    background-color: white;
-    color: #53af57;
-    border: 1px solid #53af57;
-}
+
