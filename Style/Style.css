@@ -95,6 +95,9 @@ a:hover
 	box-shadow: 1px 1px 40px #000000;
 }
 
+
+
+
 /*gestion des blocs Espace Employé */
 
 #distribution
@@ -125,7 +128,7 @@ a:hover
 
 .contenu
 {
-	font-size:larger;
+	font-size:medium;
 	font-variant: small-caps;
 	font-weight: bold;
 	font-style: italic;
@@ -134,21 +137,21 @@ a:hover
 /*Police du texte de présentation */
 .presentation
 {
-	font-size: large;
+	font-size: small;
 }
 
 .presentation p
 {
-	font-size:x-large;
+	font-size:medium;
 }
 .presentation h1
 {
-	font-size:xx-large;
+	font-size:large;
 }
 
 .titre
 {
-	font-size: 300%;
+	font-size: 200%;
 	font-variant: small-caps;
 	font-weight: bold;
 	padding-top: 5%;
@@ -167,7 +170,7 @@ a:hover
 	box-shadow:6px 5px 8px #000000;
 	border: 1px solid #f1f1f1;
 	font-variant:small-caps;
-	font-size: xx-large;
+	font-size: x-large;
 
 }
 
@@ -182,7 +185,9 @@ a:hover
 /*Style de la liste déroulante*/
 .menu ul
 {
-	font-size: x-large;
+	font-size: large;
+	padding-left: 5%
+	padding-top: 10%;
 }
 
 
@@ -192,7 +197,7 @@ a:hover
 {
 	width: 80%;
     margin:0 auto;
-    margin-top:15%;
+    margin-top:5%;
     padding: 5%;
     border: 1px solid #f1f1f1;
     background: #19852B;
