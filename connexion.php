@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Intranet - ZooPedia</title>
+		<title>connexion - ZooPedia</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="structure/structure-main.css"/>
@@ -15,7 +15,7 @@
 							<!-- Logo -->
 					<div class="formulaire"> 
 						<form method="post">
-						<p><center><legend><h1>Espace employé</h1> </legend></center></p>
+						<p><center><legend><h1>Connexion à l'Espace Employé</h1> </legend></center></p>
 
 								<p>
 									<label for="code_employe"> <h3>Votre numéro d'employé :</h3> </label>
