@@ -52,7 +52,7 @@
 					<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
 				</div>
 				<div class="icone colonne col2">
-					<img src="Style/images/facebook.png" width="65" height="65" alt="Facebook">
+					<a href="https://www.facebook.com/Zoopedia-177150146263087/" title="Suivez-nous sur facebook !"><img src="Style/images/facebook.png" width="70" height="70"/></a>
 				</div>
 				<div class="icone colonne col2">
 					<img src="Style/images/instagram.png" width="70" height="70" alt="Intsagram">
