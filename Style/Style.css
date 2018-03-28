@@ -25,11 +25,11 @@ body
 .footer
 {
 	background-color:#7C7C7C;
-	width: 100%;
     margin:20% 0 0 0;
     border: 1px solid #f1f1f1;
     opacity: 0.95;
     position: relative;
+    
 
 
 }
@@ -195,7 +195,7 @@ a:hover
 
 .cadre
 {
-	width: 80%;
+	width: 90%;
     margin:0 auto;
     margin-top:5%;
     padding: 5%;
@@ -280,6 +280,5 @@ input[type=reset]
     font-variant: small-caps;
     font-weight: bold;
 }
-
 
 
