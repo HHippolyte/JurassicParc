@@ -1,4 +1,12 @@
 
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+input[type=reset]:hover {
+    background-color: white;
 
 /* ombre du logo*/
 .logo img
@@ -66,41 +74,41 @@ a:hover
 {
 	background-image: url("images/parc.jpg");
 	opacity: 0.95;
-	height: 150px;
+	height: 20%;
 }
 #métiers
 {
 	background-image: url("images/metiers.png");
 	opacity: 0.95;
-	height: 150px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 #animaux
 {
 	background-image: url("images/animaux.jpg");
 	opacity: 0.95;
-	height: 150px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 #animations
 {
 	background-image: url("images/animations.png");
 	opacity: 0.95;
-	height: 150px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 #visites
 {
 	background-image: url("images/visites.png");
 	opacity: 0.95;
-	height: 150px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 #actualités
 {
 	background-image: url("images/pic13.jpg");
 	opacity: 0.95;
-	height: 150px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 
@@ -110,14 +118,14 @@ a:hover
 {
 	background-image: url("images/distribution.jpg");
 	opacity: 0.95;
-	height: 200px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 #animaux
 {
 	background-image: url("images/animaux.jpg");
 	opacity: 0.95;
-	height: 200px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 
@@ -125,7 +133,7 @@ a:hover
 {
 	background-image: url("images/animations.png");
 	opacity: 0.95;
-	height: 200px;
+	height: 20%;
 	box-shadow: 1px 1px 40px #000000;
 }
 
@@ -143,8 +151,20 @@ a:hover
 /*Police du texte de présentation */
 .presentation
 {
-	font-size: larger;
+	font-size: large;
 }
+
+.presentation p
+{
+	font-size:x-large;
+}
+.presentation h1
+{
+	font-size:xx-large;
+}
+
+
+
 /*bouton menu en écriture marron et fond vert*/
 .menu
 {
@@ -252,6 +272,10 @@ input[type=submit]:hover {
 
 input[type=reset]:hover {
     background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
     color: #53af57;
     border: 1px solid #53af57;
 }
