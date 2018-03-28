@@ -2,18 +2,17 @@
 	
 	<div class="colonne_alpha col12 footer">
 
-			<div class="colonne col12 centrer">
-				<h2>Contactez-nous</h2>
+			<div class="colonne col12 centrer presentation">
+				<h1>Contactez-nous</h1>
 			</div>
-				<!-- Ici je mettrais une partie PHP pour l'envoi de messages ;)-->
 
 			<div class="colonne_alpha prefix1 col5 contact">
 
 				<table>
 					<form action="contact.php" method="post" >
-						
-							<h3>Envoyer un message</h3>
-						
+						<div class="presentation">
+							<p>Envoyer un message</p>
+						</div>
 						<tr>
 							<td><div align="right">Votre nom :</div></td>
 							<td><input type="text" name="nom" size="45" maxlength="100"></td>
@@ -46,8 +45,9 @@
 			</div>
 
 			<div class="colonne col6 contact">
-						<h3>Réseaux sociaux</h3>
-				
+				<div class="presentation">
+						<p>Réseaux sociaux</p>
+				</div>
 				<div class="icone colonne col2">
 					<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
 				</div>
