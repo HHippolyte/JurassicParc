@@ -1,12 +1,4 @@
 
-input[type=submit]:hover {
-    background-color: white;
-    color: #53af57;
-    border: 1px solid #53af57;
-}
-
-input[type=reset]:hover {
-    background-color: white;
 
 /* ombre du logo*/
 .logo img
@@ -20,16 +12,7 @@ input[type=reset]:hover {
 	box-shadow: 1px 1px 30px #000000;
 }
 
-/*police et décoration de la classe presentation*/
-.presentation
-{
-	font-size: large
-}
-.presentation h1
-{
-	font-size: larger;
-	color:#FFFFFF;
-}
+
 /*Gestion du fond et la police du site*/
 body
 {
@@ -41,9 +24,9 @@ body
 /*Style du cadre du footer*/
 .footer
 {
-	background-color:#a6a6a6;
+	background-color:#7C7C7C;
 	width: 100%;
-    margin:30% 0 0 0;
+    margin:20% 0 0 0;
     border: 1px solid #f1f1f1;
     opacity: 0.95;
     position: relative;
@@ -163,6 +146,16 @@ a:hover
 	font-size:xx-large;
 }
 
+.titre
+{
+	font-size: 300%;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+
 
 
 /*bouton menu en écriture marron et fond vert*/
@@ -174,7 +167,7 @@ a:hover
 	box-shadow:6px 5px 8px #000000;
 	border: 1px solid #f1f1f1;
 	font-variant:small-caps;
-	font-size: x-large;
+	font-size: xx-large;
 
 }
 
@@ -189,11 +182,23 @@ a:hover
 /*Style de la liste déroulante*/
 .menu ul
 {
-	font-size: large;
+	font-size: x-large;
 }
 
 
+/*Style de cadre de texte*/
 
+.cadre
+{
+	width: 80%;
+    margin:0 auto;
+    margin-top:15%;
+    padding: 5%;
+    border: 1px solid #f1f1f1;
+    background: #19852B;
+    box-shadow: 10px 5px 8px #000000;
+
+}
 /*style de formulaire  */
 .formulaire 
 {
@@ -204,7 +209,7 @@ a:hover
     padding: 30px;
     border: 1px solid #f1f1f1;
     background: #7fbf7f;
-    box-shadow: 10px 5px 8px #000000
+    box-shadow: 10px 5px 8px #000000;
 
 }
 
@@ -261,6 +266,9 @@ input[type=reset]
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: large;
+    font-variant: small-caps;
+    font-weight: bold;
 }
 
 /*style de passage sur les boutons */;
@@ -272,10 +280,6 @@ input[type=submit]:hover {
 
 input[type=reset]:hover {
     background-color: white;
-    color: #53af57;
-    border: 1px solid #53af57;
-}
-
     color: #53af57;
     border: 1px solid #53af57;
 }
