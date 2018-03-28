@@ -155,6 +155,12 @@ li:hover ul.sousmenu1
 	text-align: center;
 }
 
+/*aligner le texte à gauche*/
+.alignegauche
+{
+	text-align: left;
+}
+
 /*paramètres de présentation du contenu de la main*/
 main
 {
@@ -244,6 +250,12 @@ avec une marge mini lorsque le site est ouvert sur mobile
 
 .colonne_alpha.centrer.col12
 	{width: 200px;
+	height: 35px;
+	}
+
+
+}
+
 	height: 35px;
 	}
 
