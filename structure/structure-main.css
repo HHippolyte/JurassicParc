@@ -1,6 +1,5 @@
 
 
-
 /*Conteneur en version ordinateur (affichage sur 960 pixel)*/
 #conteneur
 {
@@ -194,7 +193,7 @@ footer
 avec une marge mini lorsque le site est ouvert sur mobile
 ,met également les sections sous forme de colonnes, modifie la taille prise par le logo et l'emplacement du menu */
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 1200px) 
 {
 	 .colonne
 	  {  margin: 1% 0;}
@@ -231,7 +230,8 @@ avec une marge mini lorsque le site est ouvert sur mobile
 	/*centrer les infos de contact en écran réduit*/
 	footer
 	{
-		width: 90%;
+		width: 85%;
+		left: 3%;
 		
 	}
 	.contact
@@ -249,9 +249,6 @@ avec une marge mini lorsque le site est ouvert sur mobile
 
 
 }
-
-
-
 
 
 	
