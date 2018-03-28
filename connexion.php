@@ -26,44 +26,45 @@
 								</p>
 						</form>
 					</div>
+					<div class="contenu centrer">
+						<?php
+							//Connexion au serveur MySQL et sélection de la base
+							$connexion=mysqli_connect("localhost","root","","zoopedia")
+							or die(mysql_error());
 
-				<?php
-					//Connexion au serveur MySQL et sélection de la base
-					$connexion=mysqli_connect("localhost","root","","zoopedia")
-					or die(mysql_error());
+							//Vérification que le formulaire n'est pas vide
+							if(!empty($_POST))
+							{
+							//Renommer les données reçues du formulaire
+							$codemp=$_POST['CODE_EMPLOYE'];
+							$passemp=$_POST['PASS_EMPLOYE'];
+									//Fabrication de la requête SQL
+									$requete_connexion='SELECT * FROM employe';
 
-					//Vérification que le formulaire n'est pas vide
-					if(!empty($_POST))
-					{
-					//Renommer les données reçues du formulaire
-					$codemp=$_POST['CODE_EMPLOYE'];
-					$passemp=$_POST['PASS_EMPLOYE'];
-							//Fabrication de la requête SQL
-							$requete_connexion='SELECT * FROM employe';
+									//Envoi de la requête SELECT
+									$result_connexion=mysqli_query($connexion,$requete_connexion) or die(mysql_error());
 
-							//Envoi de la requête SELECT
-							$result_connexion=mysqli_query($connexion,$requete_connexion) or die(mysql_error());
+									//Récupération des données de la requête
+									$data_connexion=mysqli_fetch_array($result_connexion,MYSQLI_ASSOC);
 
-							//Récupération des données de la requête
-							$data_connexion=mysqli_fetch_array($result_connexion,MYSQLI_ASSOC);
+										if ($codemp==$data_connexion['CODE_EMPLOYE'] and $passemp==$data_connexion['PASS_EMPLOYE'] )
+										{
+											session_start();
+										    $_SESSION['nom'] = $data_connexion['NOM_EMPLOYE'];
+										    $_SESSION['prenom'] = $data_connexion['PRENOM_EMPLOYE'];
+										    $_SESSION['numemploye'] = $data_connexion['CODE_EMPLOYE'];
+										    header('Location: employe.php');
+										    
 
-								if ($codemp==$data_connexion['CODE_EMPLOYE'] and $passemp==$data_connexion['PASS_EMPLOYE'] )
-								{
-									session_start();
-								    $_SESSION['nom'] = $data_connexion['NOM_EMPLOYE'];
-								    $_SESSION['prenom'] = $data_connexion['PRENOM_EMPLOYE'];
-								    $_SESSION['numemploye'] = $data_connexion['CODE_EMPLOYE'];
-								    header('Location: employe.php');
-								    
+										}
+										else
+										{
+										    echo 'Mauvais identifiant ou mot de passe !';
+									    }
+							}
 
-								}
-								else
-								{
-								    echo 'Mauvais identifiant ou mot de passe !';
-							    }
-					}
-
-					?>						
+						?>		
+					</div>
 			</div>
 			<!-- Footer-->
 			<?php include("footer.php");?>
