@@ -18,8 +18,8 @@
 						<div class="colonne col12 centrer presentation">
 							<div class="presentation">
 							
-								<h2>Bienvenue à ZooPedia, lieu magique, unique et pédagogique <br />
-								</h2>
+								<h1>Bienvenue à ZooPedia, lieu magique, unique et pédagogique <br />
+								</h1>
 								<p> Implanté dans l'Est de la France entre Genève et Lyon, ZooPedia vous invite à découvrir et comprendre le mode de vie de ses animaux dans un cadre bucolique et convivial.</p>
 							</div>
 							<div class="reservez">
