@@ -154,7 +154,6 @@ a:hover
 	font-size: 200%;
 	font-variant: small-caps;
 	font-weight: bold;
-	padding-top: 5%;
 	padding-bottom: 5%;
 
 }
@@ -195,7 +194,7 @@ a:hover
 
 .cadre
 {
-	width: 90%;
+	width: 85%;
     margin:0 auto;
     margin-top:5%;
     padding: 5%;
