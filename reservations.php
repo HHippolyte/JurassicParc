@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 
 <?php include("common.php");
@@ -25,7 +26,7 @@ session_start();
 
 								<fieldset> 
 									<section>
-									<center><legend><h3>Informations personelles</h3> </legend></center>
+									<center><legend><h3>Informations personnelles</h3> </legend></center>
 									<input type="text" name="nom" placeholder="Nom">
 									<input type="text" name="prenom" placeholder="Prénom">
 									<input type="text" name="CP" placeholder="Code Postal" maxlength="5">
@@ -46,175 +47,133 @@ session_start();
 
 								<fieldset>
 									<center><legend><h3>Visites</h3></legend></center>
-									<p> Dates souhaitées <br/></p>
-									<p>
+									<p> Dates souhaitées <br/></p>	
 
-										<select id="datevisite" name="datevisite" size="1" onChange="THEFUNCTION(this.selectedIndex);">
-										<?php
-
-										//Fabrication d'une requête SQL
-										$entree='SELECT distinct DATE_VISITE FROM entree';
-
-										//Envoi de la reuqête SELECT
-										$result_entree=mysqli_query($connexion,$entree) or die(mysql_error());
-
-										while($data_entree=mysqli_fetch_array($result_entree,MYSQLI_ASSOC))
-										{
-											//transformer le format string de la date de visite en date
-											$datetime1 = new DateTime($data_entree["DATE_VISITE"]);
-											//affecter à $datetime2 la date du jour
-											$datetime2 = new DateTime('');
-
-											if($datetime1>=$datetime2)
-											{
-												echo '<option value="'.$data_entree["DATE_VISITE"].'">'.$data_entree["DATE_VISITE"].'</option><br/>';
-											}
-										}
-
-										;?>
-										</select>
-										<br/><br/>
-
-									</p>
+									<input type="date" name="datevisite"><br/><br/>
+									<center><input type="submit" value="Afficher les spectacles et les ateliers du jour"/></center>
 
 								</fieldset>
+
+							</form>
+
+
+							<form method="post">
 
 								<fieldset>
 
 									<center><legend><h3>Spectacles</h3></legend></center>
 									<p> Choix des spectacles (maximum 3) <br/></p> <!--3 spectales au max-->
 									
-									<div style="display:none;" id="divSpectacles">
+								  <div id="divSpectacles">
 
 									<label for="spectacle" > Sélectionnez les spectacles :  </label> <br/>
 
 										<?php
 
-											//Fabrication d'une requête SQL
-											$requête='SELECT * FROM spectacle S, place_spectacle PS, entree E where S.CODE_SPECTACLE=PS.CODE_SPECTACLE and PS.NUM_ENTREE=E.NUM_ENTREE';
-
-											//Envoi de la requête SELECT
-											$result=mysqli_query($connexion,$requête) or die(mysql_error());
-											
-											while($data=mysqli_fetch_array($result,MYSQLI_ASSOC))
+											if(isset($_POST['datevisite']))
 											{
-												$datetime3= new DateTime($data['DATE_VISITE']);
+												//Récupérer la variable de la date de visite
+												$datevisite=$_POST['datevisite'];
 
-												//Pour mieux afficher la date
-												$datetime4= $data['DATE_SPECTACLE'];
-												$datetime4 = explode ("-", $datetime4); // Transforme la date en array
-												$annee = $datetime4[0];
-												$mois = $datetime4[1];
-												$jour = $datetime4[2];
-
-												//Pour mieux afficher l'heure
-												$timedebutspec= explode (":", $data['HEURE_DEBUT_SPECTACLE']);//Transforme l'heure en array
-												$heuredebutspec= $timedebutspec[0];
-												$mindebutspec= $timedebutspec[1];
-												$secdebutspec= $timedebutspec[2];
-
-												$timefinspec= explode (":", $data['HEURE_FIN_SPECTACLE']);//Transforme l'heure en array
-												$heurefinspec= $timefinspec[0];
-												$minfinspec= $timefinspec[1];
-												$secfinspec= $timefinspec[2];
-
-												if($datetime1=$datetime3)
+												//Fabrication d'une requête SQL
+												$requête='SELECT distinct * FROM spectacle S';
+												//Envoi de la requête SELECT
+												$result=mysqli_query($connexion,$requête) or die(mysql_error());
+												
+												while($data=mysqli_fetch_array($result,MYSQLI_ASSOC))
 												{
-												echo "<input type='checkbox' name='article[]' value='".$data['NOM_SPECTACLE'].' de '.$data['HEURE_DEBUT_SPECTACLE'].' à '.$data['HEURE_FIN_SPECTACLE'].' le '.$data['DATE_SPECTACLE']."'>".$data['NOM_SPECTACLE'].' de '.$heuredebutspec.'h'.$mindebutspec.'  à '.$heurefinspec.'h'.$minfinspec.' le '.$jour.'/'.$mois;
-												echo "<br/>";
+													//transformer le format string de la date de visite en date
+													$datetime5= new DateTime($datevisite);
+
+													//transformer le format string de la date de visite en date
+													$datetime3= new DateTime($data["DATE_SPECTACLE"]);
+
+													//Pour mieux afficher la date
+													$datetime4= $data['DATE_SPECTACLE'];
+													$datetime4 = explode ("-", $datetime4); // Transforme la date en array
+													$annee = $datetime4[0];
+													$mois = $datetime4[1];
+													$jour = $datetime4[2];
+
+													//Pour mieux afficher l'heure
+													$timedebutspec= explode (":", $data['HEURE_DEBUT_SPECTACLE']);//Transforme l'heure en array
+													$heuredebutspec= $timedebutspec[0];
+													$mindebutspec= $timedebutspec[1];
+													$secdebutspec= $timedebutspec[2];
+													$timefinspec= explode (":", $data['HEURE_FIN_SPECTACLE']);//Transforme l'heure en array
+													$heurefinspec= $timefinspec[0];
+													$minfinspec= $timefinspec[1];
+													$secfinspec= $timefinspec[2];
+													if($datetime3==$datetime5)
+													{
+													echo "<input type='checkbox' name='article[]' value='".$data['NOM_SPECTACLE'].' de '.$data['HEURE_DEBUT_SPECTACLE'].' à '.$data['HEURE_FIN_SPECTACLE'].' le '.$data['DATE_SPECTACLE']."'>".$data['NOM_SPECTACLE'].' de '.$heuredebutspec.'h'.$mindebutspec.'  à '.$heurefinspec.'h'.$minfinspec.' le '.$jour.'/'.$mois;
+													echo "<br/>";
+													}
 												}
 											}
-
 										;?>
-
-
-									<script type="text/javascript">
-										function THEFUNCTION(i)
-										{
-											var divSpectacles= document.getElementById('divSpectacles');
-											switch(i)
-											{
-												case 0 : divSpectacles.style.display ='';break;
-												default : divSpectacles.style.display='none'; break;
-											}
-										}
-									</script>
 
 									</div>
 
 								</fieldset>
-								
-							<fieldset>
+								<fieldset>
 
 									<center><legend><h3>Ateliers</h3></legend></center>
 									<p> Choix des ateliers (maximum 3) <br/></p>
-									<div style="display:none;" id="divAteliers">
 
 									<label for="atelier" > Sélectionnez les ateliers :  </label> <br/>
 
 									<?php
 
-											//Fabrication d'une requête SQL
-											$requête='SELECT * FROM atelier A, place_atelier PA, entree E where A.CODE_ATELIER=PA.CODE_ATELIER and PA.NUM_ENTREE=A.NUM_ENTREE';
-
-											//Envoi de la requête SELECT
-											$result=mysqli_query($connexion,$requête) or die(mysql_error());
-											
-											while($data=mysqli_fetch_array($result,MYSQLI_ASSOC))
+											if(isset($_POST['datevisite']))
 											{
-												$datetime3= new DateTime($data['DATE_VISITE']);
+												//Récupérer la variable de la date de visite
+												$datevisiteat=$_POST['datevisite'];
 
-												//Pour mieux afficher la date
-												$datetime4= $data['DATE_ATELIER'];
-												$datetime4 = explode ("-", $datetime4); 
-												// Transforme la date en array
-												$annee = $datetime4[0];
-												$mois = $datetime4[1];
-												$jour = $datetime4[2];
-
-												//Pour mieux afficher l'heure
-												$timedebutatelier= explode (":", $data['HEURE_DEBUT_ATELIER']);
-												//Transforme l'heure en array
-												$heuredebutatelier= $timedebutatelier[0];
-												$mindebutatelier= $timedebutatelier[1];
-												$secdebutatelier= $timedebutatelier[2];
-
-												$timefinspec= explode (":", $data['HEURE_FIN_ATELIER']);
-												//Transforme l'heure en array
-												$heurefinatelier= $timefinatelier[0];
-												$minfinatelier= $timefinatelier[1];
-												$secfinatelier= $timefinatelier[2];
-
-												if($datetime1=$datetime3)
+												//Fabrication d'une requête SQL
+												$reqatelier='SELECT distinct * FROM atelier A';
+												//Envoi de la requête SELECT
+												$resultatelier=mysqli_query($connexion,$reqatelier) or die(mysql_error());
+												
+												while($dataatelier=mysqli_fetch_array($resultatelier,MYSQLI_ASSOC))
 												{
-												echo "<input type='checkbox' name='article[]' value='".$data['NOM_ATELIER'].' de '.$data['HEURE_DEBUT_ATELIER'].' à '.$data['HEURE_FIN_ATELIER'].' le '.$data['DATE_ATELIER']."'>".$data['NOM_ATELIER'].' de '.$heuredebutatelier.'h'.$mindebutatelier.'  à '.$heurefinatelier.'h'.$minfinatelier.' le '.$jour.'/'.$mois;
-												echo "<br/>";
+													//transformer le format string de la date de visite en date
+													$datetime1= new DateTime($datevisiteat);
+
+													//transformer le format string de la date de visite en date
+													$datetime2= new DateTime($dataatelier["DATE_ATELIER"]);
+
+													//Pour mieux afficher la date
+													$datetime6= $dataatelier['DATE_ATELIER'];
+													$datetime6 = explode ("-", $datetime6); 
+													// Transforme la date en array
+													$annee = $datetime6[0];
+													$mois = $datetime6[1];
+													$jour = $datetime6[2];
+													//Pour mieux afficher l'heure
+													$timedebutatelier= explode (":", $dataatelier['HEURE_DEBUT_ATELIER']);
+													//Transforme l'heure en array
+													$heuredebutatelier= $timedebutatelier[0];
+													$mindebutatelier= $timedebutatelier[1];
+													$secdebutatelier= $timedebutatelier[2];
+													$timefinatelier= explode (":", $dataatelier['HEURE_FIN_ATELIER']);
+													//Transforme l'heure en array
+													$heurefinatelier= $timefinatelier[0];
+													$minfinatelier= $timefinatelier[1];
+													$secfinatelier= $timefinatelier[2];
+													if($datetime1==$datetime2)
+													{
+													echo "<input type='checkbox' name='article[]' value='".$dataatelier['NOM_ATELIER'].' de '.$dataatelier['HEURE_DEBUT_ATELIER'].' à '.$data['HEURE_FIN_ATELIER'].' le '.$dataatelier['DATE_ATELIER']."'>".$dataatelier['NOM_ATELIER'].' de '.$heuredebutatelier.'h'.$mindebutatelier.'  à '.$heurefinatelier.'h'.$minfinatelier.' le '.$jour.'/'.$mois;
+													echo "<br/>";
+													}
 												}
 											}
-
 										;?>
-
-
-									<script type="text/javascript">
-										function THEFUNCTION(i)
-										{
-											var divAteliers= document.getElementById('divAteliers');
-											switch(i)
-											{
-												case 0 : divAteliers.style.display ='';break;
-												default : divAteliers.style.display='none'; break;
-											}
-										}
-									</script>
-
-									</div>
-
 								</fieldset>
-							
+
 								<fieldset>
 									<center><input type="submit" value="Envoyer"/></center>
 								</fieldset>
-
 							</form>
 						</div>
 					</div>
@@ -222,4 +181,3 @@ session_start();
 				<?php include("footer.php");?>
 			</div>
 	</body>
-</html>
