@@ -15,10 +15,14 @@ session_start();
 	<body>
 			<div id="conteneur"> <!-- ex wrapper correspond à l'ensemble du corps --!>
 				<!-- Header -->
+
 					<?php include("header.php"); ?> 
 
 					<!-- Page générale -->
 					<main>
+						<div class="colonne_alpha col12 titre">
+						Espace Employé
+						</div>
 						<div class="contenu">
 						<?php 
 						echo 'Vous êtes connecté '.$_SESSION['nom'].' '.$_SESSION['prenom'].' !';
@@ -35,19 +39,19 @@ session_start();
 									</div>
 								</section>	
 								<section>
-
-									<div class="colonne_alpha col4" id="distribution">
+								<div class="presentation">
+									<div class="colonne_alpha col4 centrer" id="distribution">
 										<a href="distribution.php">
-											<center><h2> Distribution </h2><center>
+											<h2> Distribution </h2>
 											<div class="contenu">
 												<p> Carnet de distribution de la nourriture</p><br><br>
 											</div>
-										</a>
-											
+										</a>	
 									</div>
+
 									<div class="colonne col4" id="animaux"> 
 										<a href="placement.php">
-											<center><h2>Placement animal</h2><center>
+											<h2>Placement animal</h2>
 											<div class="contenu">
 												<p> Gestion de l'espace </p><br><br>
 											</div>
@@ -56,12 +60,13 @@ session_start();
 
 									<div class="colonne col4" id="ajout">
 										<a href="creation.php">
-											<center><h2>Création fiche animal</h2>
+											<h2>Création fiche animal</h2>
 											<div class="contenu">
-												<p> Enregistrer un nouvel arrivant </p></center><br><br>
+												<p> Enregistrer un nouvel arrivant </p><br><br>
 											</div>
 										</a>
 									</div>
+								</div>
 								</section>
 					</main>
 					<!-- Footer -->
