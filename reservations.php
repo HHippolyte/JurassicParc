@@ -34,7 +34,7 @@ session_start();
 									<center><legend><h3>Informations personnelles</h3> </legend></center>
 									<input type="text" name="nom" placeholder="Nom">
 									<input type="text" name="prenom" placeholder="Prénom">
-									<input type="text" name="CP" placeholder="Code Postal" maxlength="5">
+									<input type="text" name="CP" placeholder="Code Postal" maxlength="5"><br/>
 									<input type="email" name="email" placeholder="Adresse mail" maxlength="30"> <br/>
 									</section>
 								</fieldset>
