@@ -154,7 +154,7 @@ a:hover
 	font-size: 200%;
 	font-variant: small-caps;
 	font-weight: bold;
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 
 }
 
@@ -242,12 +242,14 @@ a:hover
 }
 
 /* Style des boutons input */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=number],input[type=date], input[type=textarea] 
+{
     width: 70%;
     padding: 6px 20px;
     margin: 8px 0;
     border: 1px solid #ccc;
     position: center;
+    text-align: center;
 
 }
 
