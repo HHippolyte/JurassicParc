@@ -58,8 +58,9 @@ session_start();
 									<p> Dates souhaitées <br/></p>	
 
 									<input type="date" name="datevisite"><br/><br/>
-									<center><input type="submit" value="Afficher les spectacles et les ateliers du jour"/></center>
+									<center><input type="submit" value="Spectacles et ateliers du jour"/></center>
 
+									<div class="contenu">
 									<?php
 
 									if(!empty($_POST))
@@ -200,19 +201,23 @@ session_start();
 									else echo "Veuillez remplir tous les champs";
 
 									?>
+								</div>
 
 								</fieldset>
 
 							</form>
 
-
+						
 							<form method="post" action="ticketvisiteur.php">
 
 								<fieldset>
 
 									<center><legend><h3>Spectacles</h3></legend></center>
+									<div class="presentation">
 									<p> Choix des spectacles (maximum 3) <br/></p> <!--3 spectales au max-->
+									</div>
 
+									<div class="contenu">
 										<?php
 
 											if(isset($_POST['datevisite']))
@@ -259,15 +264,17 @@ session_start();
 													}
 												}
 											}
-										;?>
+										?>
+									</div>
 
 								</fieldset>
-
+							
 								<fieldset>
-
+									<div class="presentation">
 									<center><legend><h3>Ateliers</h3></legend></center>
 									<p> Choix des ateliers (maximum 3) <br/></p>
-
+									</div>
+								<div class="contenu">
 									<?php
 
 											if(isset($_POST['datevisite']))
@@ -317,11 +324,12 @@ session_start();
 											}
 										;?>
 								</fieldset>
-
+							</div>
 								<fieldset>
 									<center><input type="submit" value="Envoyer"/></center>
 								</fieldset>
 							</form>
+
 						</div>
 					</div>
 				<!-- Footer -->
