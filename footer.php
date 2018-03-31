@@ -49,16 +49,16 @@
 						<p>Réseaux sociaux</p>
 				</div>
 				<div class="icone colonne col2">
-					<img src="Style/images/twitter.png" width="70" height="70" alt="Twitter">
+					<img src="Style/images/twitter.png" alt="Twitter">
 				</div>
 				<div class="icone colonne col2">
-					<a href="https://www.facebook.com/Zoopedia-177150146263087/" title="Suivez-nous sur facebook !"><img src="Style/images/facebook.png" width="70" height="70"/></a>
+					<a href="https://www.facebook.com/Zoopedia-177150146263087/" title="Suivez-nous sur facebook !"><img src="Style/images/facebook.png"/></a>
 				</div>
 				<div class="icone colonne col2">
-					<img src="Style/images/instagram.png" width="70" height="70" alt="Intsagram">
+					<img src="Style/images/instagram.png" alt="Intsagram">
 				</div>
 				<div class="icone colonne col2">
-					<img src="Style/images/email.png" width="70" height="70" alt="Email">
+					<img src="Style/images/email.png" alt="Email">
 				</div>
 
 			</div>
