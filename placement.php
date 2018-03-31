@@ -94,15 +94,3 @@ session_start();
 	<!-- Footer-->
 	<?php include("footer.php");?>
 </html>
-		}
-
-					?>
-	
-</div>
-</body>
-</html>
-
-	
-</div>
-</body>
-</html>
