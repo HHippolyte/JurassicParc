@@ -16,18 +16,19 @@
 					<main>
 						<!--présentation-->
 						<div class="colonne col12 centrer presentation">
-							
+						<div class="cadre">
 							<div class="titre">
-								Bienvenue à ZooPedia, lieu magique, unique et pédagogique							
+								Bienvenue à ZooPedia, lieu magique, unique et pédagogique				
 							</div>
 							<div class="presentation">		
 								<h1> Implanté dans l'Est de la France entre Genève et Lyon, ZooPedia vous invite à découvrir et comprendre le mode de vie de ses animaux dans un cadre bucolique et convivial.</h1>
 							</div>
+						</div>	
 							<div class="reservez">
 								<form method="post" action="reservations.php">
 								<input type="submit" value="Réservez maintenant" />
-							</form>
 							</div>
+						
 						
 						<!-- correspond aux blocs généraux-->
 						<!-- première section de 3 blocs généraux-->
@@ -48,13 +49,12 @@
 											<p> Les différents métiers existants au sein de notre parc</p><br><br>
 										</div>
 									</a>
-										
 								</div>
-								<div class="colonne col4" id="animaux"> <!-- à voir -->
-									<a href="animaux.html">
+								<div class="colonne col4" id="animaux"> 
+									<a href="animaux.php">
 										<h2>NOS ANIMAUX</h2>
 										<div class="contenu">
-											<p> L'ensemble de nos stars méritant toute notre attention </p><br><br>
+											<p>L'ensemble de nos stars méritant toute notre attention</p>
 										</div>
 									</a>
 								</div>
@@ -97,4 +97,6 @@
 
 	</body>
 </html>
+
+
 
