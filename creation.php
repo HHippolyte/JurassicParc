@@ -21,9 +21,7 @@ session_start();
 						<div class="titre">
 							Création d'une fiche animal:
 						</div>
-						<!-- Formulaire de création d'une fiche animal-->
 							<div class="cadre"
-
 								<form method="post">
 									<label for="nomanimal" > Saisissez son nom : </label><br/>
 										<input type="text" name="nomanimal"> <br/>
@@ -54,7 +52,6 @@ session_start();
 							<div class="contenu centrer">
 								<br/>
 								<?php 
-								//Récupération des données issues du formulaire et insertion dans la base de données 
 									$connexion=mysqli_connect("localhost","root","","zoopedia")
 									or die(mysql_error());
 
