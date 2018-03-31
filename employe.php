@@ -40,7 +40,7 @@ session_start();
 								</section>	
 								<section>
 								<div class="presentation">
-									<div class="colonne_alpha col4 centrer" id="distribution">
+									<div class="colonne_alpha col4 centrer" id="animations">
 										<a href="distribution.php">
 											<h2> Distribution </h2>
 											<div class="contenu">
