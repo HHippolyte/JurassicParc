@@ -11,12 +11,6 @@
 	min-height: 100%
 }
 
-/*Les images de la classe logo prendront 70% de la largeur de l'écran */
-.logo img
-{
-	width:70%;
-}
-
 /*  paramètres d'une colonne normale */
 .colonne
 {
