@@ -1,23 +1,39 @@
 
 
-/* ombre du logo*/
+/* style du logo*/
 .logo img
 {
     box-shadow: 1px 1px 30px #000000;
+    width:85%;
+    margin-left: 3%
 }
 
 /*ombre des icones reseaux sociaux*/
 .icone img
 {
 	box-shadow: 1px 1px 30px #000000;
+	width:70px;
+	height:70px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
+/*augmente les icones lorsque survolées*/
+.icone img:hover
+{
+
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
 
 /*Gestion du fond et la police du site*/
 body
 {
 
 	background-image: url("images/fondzoo(flouté).jpg");
+	background-attachment: fixed;
 	opacity:0.9;
 	color:#FFFFFF;
 }
@@ -55,76 +71,147 @@ a:hover
 /*image de fond derrière les différents bloc*/
 #parc
 {
-	background-image: url("images/parc.jpg");
-	opacity: 0.95;
-	height: 20%;
+	background-image: url("images/parc_flou.jpg");
+	background-repeat: no-repeat;
+	background-position: top;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
+	opacity: 0.9;
+	height: 22%;
+	box-shadow: 1px 1px 40px #000000;
+	margin-bottom: 1%;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
+
+/*s'éclaircit quand survolé*/
+#parc:hover
+{
+	background-image: url("images/parc.jpg");
+	opacity: 1;
+}
+
 #métiers
 {
-	background-image: url("images/metiers.png");
-	opacity: 0.95;
-	height: 20%;
+	background-image: url("images/metiers_flou.png");
+	background-repeat: no-repeat;
+	background-position: top;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
+	opacity: 0.9;
+	height: 22%;
 	box-shadow: 1px 1px 40px #000000;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
+
+/*s'éclaircit quand survolé*/
+#métiers:hover
+{
+	background-image: url("images/metiers.png");
+	opacity: 1;
+}
+
 #animaux
 {
-	background-image: url("images/animaux.jpg");
-	opacity: 0.95;
-	height: 20%;
+	background-image: url("images/animaux_flou.jpg");
+	background-repeat: no-repeat;
+	background-position:center;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
+	opacity: 0.9;
+	height: 22%;
 	box-shadow: 1px 1px 40px #000000;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
+
+/*s'éclaircit quand survolé*/
+#animaux:hover
+{
+	background-image: url("images/animaux.jpg");
+	opacity: 1;
+
+}
+
 #animations
 {
-	background-image: url("images/animations.png");
-	opacity: 0.95;
-	height: 20%;
+	background-image: url("images/animations_flou.png");
+	background-repeat: no-repeat;
+	background-position:left;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
+	opacity: 0.9;
+	height: 22%;
 	box-shadow: 1px 1px 40px #000000;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
+
+/*s'éclaircit quand survolé*/
+#animations:hover
+{
+	background-image: url("images/animations.png");
+	opacity: 1;
+}
+
 #visites
 {
-	background-image: url("images/visites.png");
-	opacity: 0.95;
-	height: 20%;
+	background-image: url("images/visites_flou.png");
+	background-repeat: no-repeat;
+	background-position:top;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
+	opacity: 0.9;
+	height: 22%;
 	box-shadow: 1px 1px 40px #000000;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
+
+/*s'éclaircit quand survolé*/
+#visites:hover
+{
+	background-image: url("images/visites.png");
+	opacity: 1;
+}
+
 #actualités
 {
-	background-image: url("images/pic13.jpg");
+	background-image: url("images/actualite_flou.jpg");
+	background-repeat: no-repeat;
+	background-position:center;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
 	opacity: 0.95;
-	height: 20%;
+	height: 22%;
 	box-shadow: 1px 1px 40px #000000;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
 
-
-
+/*s'éclaircit quand survolé*/
+#actualités:hover
+{
+	background-image: url("images/actualite.jpg");
+	opacity: 1;
+}
 
 /*gestion des blocs Espace Employé */
-
-#distribution
-{
-	background-image: url("images/distribution.jpg");
-	opacity: 0.95;
-	height: 20%;
-	box-shadow: 1px 1px 40px #000000;
-}
-#animaux
-{
-	background-image: url("images/animaux.jpg");
-	opacity: 0.95;
-	height: 20%;
-	box-shadow: 1px 1px 40px #000000;
-}
-
 #ajout
 {
-	background-image: url("images/animations.png");
+	background-image: url("images/distribution_flou.jpg");
+	background-repeat: no-repeat;
+	background-position:center;                                                                                                                                                                                                                                                                                                                                                                                                                           
+	text-shadow: 1px 1px 2px black;
 	opacity: 0.95;
-	height: 20%;
+	height: 22%;
 	box-shadow: 1px 1px 40px #000000;
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
 }
 
+#ajout:hover
+{
+	background-image: url("images/distribution.jpg");
+	opacity: 1;
+}
 
-/*Police des contenus */
+/*Police des textes de contenus */
 
 .contenu
 {
@@ -132,17 +219,21 @@ a:hover
 	font-variant: small-caps;
 	font-weight: bold;
 	font-style: italic;
+	text-shadow: 1px 1px 2px black;
 }
 
-/*Police du texte de présentation */
+/*Police des textes de présentation */
 .presentation
 {
 	font-size: small;
+	text-shadow: 1px 1px 2px black;
+
 }
 
 .presentation p
 {
 	font-size:medium;
+	font-family: cursive;
 }
 .presentation h1
 {
@@ -158,8 +249,6 @@ a:hover
 
 }
 
-
-
 /*bouton menu en écriture marron et fond vert*/
 .menu
 {
@@ -170,56 +259,66 @@ a:hover
 	border: 1px solid #f1f1f1;
 	font-variant:small-caps;
 	font-size: x-large;
-
+	text-shadow: 1px 1px 2px black;
 }
 
 
 /*enlever les puce dans le menu*/
-#menu li
+.menu li
 {
 	list-style-type: none;
-	
+		-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
+.menu li:hover
+{
+		-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 /*Style de la liste déroulante*/
 .menu ul
 {
 	font-size: large;
-	padding-left: 5%
-	padding-top: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
 }
 
 
 /*Style de cadre de texte*/
-
 .cadre
 {
 	width: 85%;
+	border-radius: 10px;
     margin:0 auto;
     margin-top:5%;
     padding: 5%;
     border: 1px solid #f1f1f1;
     background: #19852B;
     box-shadow: 10px 5px 8px #000000;
-
 }
 
 .cadre img
 {
 	width: 100%;
 }
+
 /*style de formulaire  */
 .formulaire 
 {
 
 	width: 70%;
+	border-radius: 10px;
     margin:0 auto;
     margin-top:25%;
     padding: 30px;
     border: 1px solid #f1f1f1;
     background: #7fbf7f;
     box-shadow: 10px 5px 8px #000000;
-
+    text-shadow: 1px 1px 2px black;
 }
 
 /*Style des titres de formulaire*/
@@ -251,6 +350,7 @@ input[type=text], input[type=password], input[type=number],input[type=date], inp
     position: center;
     text-align: center;
 
+
 }
 
 /* Style des boutons */
@@ -266,8 +366,23 @@ input[type=submit]
     font-size: large;
     font-variant: small-caps;
     font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid #f1f1f1;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
+/* Style des boutons quand survolé (zoom) */
+input[type=submit]:hover
+{
+    background-color:#6eaf53;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*Style des boutons reset*/
 input[type=reset] 
 {
     background-color: #53af57;
@@ -280,6 +395,19 @@ input[type=reset]
     font-size: large;
     font-variant: small-caps;
     font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid #f1f1f1;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
+/* Style des boutons quand survolé */
+input[type=reset]:hover
+{
+    background-color:#6eaf53;
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
