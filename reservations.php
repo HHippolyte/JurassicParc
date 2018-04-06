@@ -78,6 +78,7 @@ session_start();
 											{$categorie=$_POST['categorie'];}
 										if(isset($_POST['datevisite']) && $_POST['datevisite'] !="")
 											{$datevisite=$_POST['datevisite'];}
+										else{die;}
 
 										//Si tout est okay, on enregistre visiteur dans BDD
 										if(isset($nom) && isset($prenom) && isset($CP) && isset($email) && isset($categorie))
@@ -194,11 +195,8 @@ session_start();
 										}
 
 										$result_nouvelleentree=mysqli_query($connexion,$nouvelleentree);
-										
-
 
 									}
-									else echo "Veuillez remplir tous les champs";
 
 									?>
 								</div>
