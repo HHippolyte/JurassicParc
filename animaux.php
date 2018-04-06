@@ -17,11 +17,10 @@
 				<?php include("header.php"); ?> 
 
 				<div id="colonne_alpha centrer col12 presentation">
-							<div class="cadre">
+							
 								<div class="titre">
 									<center><h2> Nos animaux</h2><center>
 								</div>
-							</div>
 							<div class="cadre">
 								<div class="presentation alignegauche">
 									<p> Zoopedia dispose d'un grand nombre d'animaux répartis dans l'ensemble du parc. Trouvez dans cette liste les animaux actuellement visibles et de premières informations sur les espèces présentes. </p>
