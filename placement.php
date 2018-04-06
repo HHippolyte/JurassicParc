@@ -32,11 +32,11 @@ session_start();
 												if(isset($_POST['animal']) && $_POST['animal'] !="")
 													{$animal=$_POST['animal'];}
 											}
-						$requete="SELECT NUM_ANIMAL, NOM_ANIMAL, CODE_ESPECE, DATE_NAISSANCE_ANIMAL FROM animal WHERE NUM_ANIMAL=$animal";
+						$requete="SELECT NUM_ANIMAL, NOM_ANIMAL, e.LIBELLE_ESPECE, DATE_NAISSANCE_ANIMAL FROM animal AS a INNER JOIN espece AS e ON a.CODE_ESPECE=e.CODE_ESPECE  WHERE NUM_ANIMAL=$animal";
 						$result_animal=mysqli_query($connexion,$requete) or die(mysql_error());
 												while($ligne=mysqli_fetch_array($result_animal)){
 															
-													echo 'value="ID animal: '.$ligne["NUM_ANIMAL"].'" - Nom animal: "'.$ligne["NOM_ANIMAL"].'" - Espece animal: "'.$ligne["CODE_ESPECE"].'"- Date naissance animal: "'.$ligne["DATE_NAISSANCE_ANIMAL"].'" ID animal: '.$ligne["NUM_ANIMAL"].' - Nom animal: '.$ligne["NOM_ANIMAL"].' - Code espece animal: '.$ligne["CODE_ESPECE"].'<br/> - Date naissance animal: '.$ligne["DATE_NAISSANCE_ANIMAL"].'<br/>';
+													echo 'ID animal: '.$ligne["NUM_ANIMAL"].'" - Nom animal: "'.$ligne["NOM_ANIMAL"].'" - Espece animal: "'.$ligne["LIBELLE_ESPECE"].'"- Date naissance animal: "'.$ligne["DATE_NAISSANCE_ANIMAL"];
 												}
 
 
