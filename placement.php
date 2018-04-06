@@ -23,22 +23,24 @@ session_start();
 							<input type="submit">
 						</form>
 					</div>
-					<div class="cadre centrer">
-						<h3> Informations de l'animal selectionné:</h3>
+					
 						<?php
 						if(!empty($_POST))
 											{
 												//Vérification des champs
 												if(isset($_POST['animal']) && $_POST['animal'] !="")
-													{$animal=$_POST['animal'];}
+													{$animal=$_POST['animal'];} else{die;}
 											}
 						$requete="SELECT NUM_ANIMAL, NOM_ANIMAL, e.LIBELLE_ESPECE, DATE_NAISSANCE_ANIMAL FROM animal AS a INNER JOIN espece AS e ON a.CODE_ESPECE=e.CODE_ESPECE  WHERE NUM_ANIMAL=$animal";
 						$result_animal=mysqli_query($connexion,$requete) or die(mysql_error());
-												while($ligne=mysqli_fetch_array($result_animal)){
-															
+												while($ligne=mysqli_fetch_array($result_animal))
+												{
+													echo "<div class='cadre centrer'>
+														<h3> Informations de l'animal selectionné:</h3>";	
 													echo 'ID animal: '.$ligne["NUM_ANIMAL"].'" - Nom animal: "'.$ligne["NOM_ANIMAL"].'" - Espece animal: "'.$ligne["LIBELLE_ESPECE"].'"- Date naissance animal: "'.$ligne["DATE_NAISSANCE_ANIMAL"];
 												}
 
+											
 
 						?>
 						<form action="confirmationplacement.php" method="post">
