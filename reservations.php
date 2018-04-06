@@ -26,6 +26,9 @@ session_start();
 				<!-- Généralités et formulaires -->
 					<div id="main">
 						<div class="colonne_alpha col12 centrer">
+							<div class="titre">
+							Espace Réservation
+							</div>
 							<div class="presentation cadre"
 								<form method="post">
 
