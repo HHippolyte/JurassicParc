@@ -18,15 +18,17 @@
 				<!-- Généralités -->
 				<main>
 					<div id="colonne_alpha centrer col12 presentation">
-						<div class="cadre">
+						
 							<div class="titre">
 								Visites de groupes 
 							</div>
-							<div class="presentation">
+							<div class="presentation cadre">
 								<h1> Présentation </h1>
 								<p>Découvrez les différentes visites guidées pour les groupes (associations, clubs, sorties familiales...) ! 
 								Sur réservation uniquement, hors périodes de vacances scolaires.</p>
 								<img src="Style/images/visites.png" alt="Visites" />
+							</div>
+							<div class="presentation cadre">
 								<p> Durée : 3h <br/>Tarif : 70 € par groupe (en plus du prix d'entrée). <br/>
 								Entre 15 et 25 personnes maximum. <br/>
 								Réservations par mail : pedagogie.parczoologique@gmail.com </p>
@@ -37,7 +39,7 @@
 								<h1> Fonctionnement </h1>
 								<p> Le parc accepte la venue de groupes, pour plus d'informations ou pour réserver, veuillez nous contacter en fin de page dans la rubrique "Nous contacter". </p>
 							</div>
-						</div>
+						
 					</div>
 				</main>
 
@@ -48,3 +50,4 @@
 
 	</body>
 </html>
+
